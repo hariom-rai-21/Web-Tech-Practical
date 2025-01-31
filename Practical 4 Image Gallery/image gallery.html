@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hariom Image Gallery</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #070707;
+            color: #f6f5f5;
+        }
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 2.5em;
+            color: #faf7f7;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .gallery img {
+            width: 100%;
+            height: 200px; /* Fixed height for 1:1 aspect ratio */
+            object-fit: cover; /* Ensures images cover the area */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Hariom Image Gallery</h1>
+    <div class="gallery">
+        <!-- Replace the src with your image URLs -->
+        <img src="img/1.jpeg" alt="Image 1">
+        <img src="img/img2.jpg" alt="Image 2">
+        <img src="img/img11.jpg"Image 3">
+        <img src="img/img12.jpg"Image 4">
+        <img src="img/img13.jpg"Image 5">
+        <img src="img/img14.jpg"Image 6">
+        <img src="img/img15.jpg"Image 7">
+        <img src="img/img2.jpg"Image 8">
+        <img src="img/img3.jpg"Image 9">
+        <img src="img/img4.jpg"Image 10">
+        <img src="img/img5.jpg"Image 11">
+        <img src="img/img6.jpg"Image 12">
+        <img src="img/img7.jpg"Image 13">
+        <img src="img/img8.jpg"Image 14">
+        <img src="img/img9.jpg"Image 15">
+
+
+    <div class="footer">
+        <p>&copy; 2023 Your Gallery Name. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
+
